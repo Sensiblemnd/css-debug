@@ -1,0 +1,582 @@
+/*
+    pesticide v1.3.0 . @mrmrs . MIT
+    https://github.com/mrmrs/pesticide/blob&/master/css/pesticide.css
+
+*/
+.pesticide-active,
+.pesticide-active-hover {
+  --color-body: #ff0000;
+  --color-hgroup: #277fb9;
+  --color-article: #3498db;
+  --color-nav: #0088c3;
+  --color-aside: #33a0ce;
+  --color-section: #66b8da;
+  --color-header: #99cfe7;
+  --color-footer: #cce7f3;
+  --color-h1: #162544;
+  --color-h2: #314e6e;
+  --color-h3: #3e5e85;
+  --color-h4: #449baf;
+  --color-h5: #c7d1cb;
+  --color-h6: #4371d0;
+  --color-main: #2f4f90;
+  --color-address: #1a2c51;
+  --color-div: #036cdb;
+  --color-p: #ac050b;
+  --color-hr: #ff063f;
+  --color-pre: #850440;
+  --color-blockquote: #f1b8e7;
+  --color-ol: #ff050c;
+  --color-ul: #d90416;
+  --color-li: #d90416;
+  --color-dl: #fd3427;
+  --color-dt: #ff0043;
+  --color-marquee: #ff005b;
+  --color-dd: #e80174;
+  --color-figure: #ff00bb;
+  --color-figcaption: #bf0032;
+  --color-table: #00cc99;
+  --color-caption: #37ffc4;
+  --color-thead: #98daca;
+  --color-tbody: #64a7a0;
+  --color-tfoot: #22746b;
+  --color-tr: #86c0b2;
+  --color-th: #a1e7d6;
+  --color-td: #3f5a54;
+  --color-col: #6c9a8f;
+  --color-colgroup: #6c9a9d;
+  --color-button: #da8301;
+  --color-datalist: #c06000;
+  --color-fieldset: #d95100;
+  --color-form: #d23600;
+  --color-input: #fca600;
+  --color-keygen: #b31e00;
+  --color-label: #ee8900;
+  --color-legend: #de6d00;
+  --color-meter: #e8630c;
+  --color-optgroup: #b33600;
+  --color-option: #ff8a00;
+  --color-output: #ff9619;
+  --color-progress: #e57c00;
+  --color-select: #e26e0f;
+  --color-textarea: #cc5400;
+  --color-details: #33848f;
+  --color-summary: #60a1a6;
+  --color-command: #438da1;
+  --color-menu: #449da6;
+  --color-del: #bf0000;
+  --color-ins: #400000;
+  --color-img: #22746b;
+  --color-iframe: #64a7a0;
+  --color-embed: #98daca;
+  --color-object: #00cc99;
+  --color-param: #37ffc4;
+  --color-video: #6ee866;
+  --color-audio: #027353;
+  --color-source: #012426;
+  --color-canvas: #a2f570;
+  --color-track: #59a600;
+  --color-map: #7be500;
+  --color-area: #305900;
+  --color-a: #ff62ab;
+  --color-em: #800b41;
+  --color-strong: #ff1583;
+  --color-i: #803156;
+  --color-b: #cc1169;
+  --color-u: #ff0430;
+  --color-s: #f805e3;
+  --color-small: #d107b2;
+  --color-strike: #ff00ff;
+  --color-abbr: #4a0263;
+  --color-q: #240018;
+  --color-cite: #64003c;
+  --color-dfn: #b4005a;
+  --color-sub: #dba0c8;
+  --color-sup: #cc0256;
+  --color-time: #d6606d;
+  --color-code: #e04251;
+  --color-kbd: #5e001f;
+  --color-samp: #9c0033;
+  --color-var: #d90047;
+  --color-mark: #ff0053;
+  --color-bdi: #bf3668;
+  --color-bdo: #6f1400;
+  --color-ruby: #ff7b93;
+  --color-rt: #ff2f54;
+  --color-rp: #803e49;
+  --color-span: #cc2643;
+  --color-br: #db687d;
+  --color-nobr: #ff4f6d;
+  --color-dialog: #ff5733;
+  --color-template: #3357ff;
+  --color-slot: #ff33a1;
+  --color-search: #ff33a1;
+  --color-rb: #ff33a1;
+  --color-acronym: #ff33a1;
+  --color-big: #ff33a1;
+  --color-center: #ff33a1;
+  --color-data: #ff33a1;
+  --color-dir: #ff33a1;
+  --color-font: #ff33a1;
+}
+
+:has(.pesticide-active-hover) {
+  & *:hover {
+    box-shadow: 2px 0px 2px 1px rgb(7 163 255 / 50%);
+    background-color: rgba(255, 255, 255, 0.108);
+  }
+}
+
+:has(.pesticide-active) {
+  & body {
+    outline: 1px solid var(--color-body) !important;
+  }
+
+  & hgroup {
+    outline: 1px solid var(--color-hgroup) !important;
+  }
+
+  & article {
+    outline: 1px solid var(--color-article) !important;
+  }
+
+  & nav {
+    outline: 1px solid var(--color-nav) !important;
+  }
+
+  & aside {
+    outline: 1px solid var(--color-aside) !important;
+  }
+
+  & section {
+    outline: 1px solid var(--color-section) !important;
+  }
+
+  & header {
+    outline: 1px solid var(--color-header) !important;
+  }
+
+  & footer {
+    outline: 1px solid var(--color-footer) !important;
+  }
+
+  & h1 {
+    outline: 1px solid var(--color-h1) !important;
+  }
+
+  & h2 {
+    outline: 1px solid var(--color-h2) !important;
+  }
+
+  & h3 {
+    outline: 1px solid var(--color-h3) !important;
+  }
+
+  & h4 {
+    outline: 1px solid var(--color-h4) !important;
+  }
+
+  & h5 {
+    outline: 1px solid var(--color-h5) !important;
+  }
+
+  & h6 {
+    outline: 1px solid var(--color-h6) !important;
+  }
+
+  & main {
+    outline: 1px solid var(--color-main) !important;
+  }
+
+  & address {
+    outline: 1px solid var(--color-address) !important;
+  }
+
+  & div {
+    outline: 1px solid var(--color-div) !important;
+  }
+
+  & p {
+    outline: 1px solid var(--color-p) !important;
+  }
+
+  & hr {
+    outline: 1px solid var(--color-hr) !important;
+  }
+
+  & pre {
+    outline: 1px solid var(--color-pre) !important;
+  }
+
+  & blockquote {
+    outline: 1px solid var(--color-blockquote) !important;
+  }
+
+  & ol {
+    outline: 1px solid var(--color-ol) !important;
+  }
+
+  & ul {
+    outline: 1px solid var(--color-ul) !important;
+  }
+
+  & li {
+    outline: 1px solid var(--color-li) !important;
+  }
+
+  & dl {
+    outline: 1px solid var(--color-dl) !important;
+  }
+
+  & dt {
+    outline: 1px solid var(--color-dt) !important;
+  }
+
+  & marquee {
+    outline: 1px solid var(--color-marquee) !important;
+  }
+
+  & dd {
+    outline: 1px solid var(--color-dd) !important;
+  }
+
+  & figure {
+    outline: 1px solid var(--color-figure) !important;
+  }
+
+  & figcaption {
+    outline: 1px solid var(--color-figcaption) !important;
+  }
+
+  & table {
+    outline: 1px solid var(--color-table) !important;
+  }
+
+  & caption {
+    outline: 1px solid var(--color-caption) !important;
+  }
+
+  & thead {
+    outline: 1px solid var(--color-thead) !important;
+  }
+
+  & tbody {
+    outline: 1px solid var(--color-tbody) !important;
+  }
+
+  & tfoot {
+    outline: 1px solid var(--color-tfoot) !important;
+  }
+
+  & tr {
+    outline: 1px solid var(--color-tr) !important;
+  }
+
+  & th {
+    outline: 1px solid var(--color-th) !important;
+  }
+
+  & td {
+    outline: 1px solid var(--color-td) !important;
+  }
+
+  & col {
+    outline: 1px solid var(--color-col) !important;
+  }
+
+  & colgroup {
+    outline: 1px solid var(--color-colgroup) !important;
+  }
+
+  & button {
+    outline: 1px solid var(--color-button) !important;
+  }
+
+  & datalist {
+    outline: 1px solid var(--color-datalist) !important;
+  }
+
+  & fieldset {
+    outline: 1px solid var(--color-fieldset) !important;
+  }
+
+  & form {
+    outline: 1px solid var(--color-form) !important;
+  }
+
+  & input {
+    outline: 1px solid var(--color-input) !important;
+  }
+
+  & keygen {
+    outline: 1px solid var(--color-keygen) !important;
+  }
+
+  & label {
+    outline: 1px solid var(--color-label) !important;
+  }
+
+  & legend {
+    outline: 1px solid var(--color-legend) !important;
+  }
+
+  & meter {
+    outline: 1px solid var(--color-meter) !important;
+  }
+
+  & optgroup {
+    outline: 1px solid var(--color-optgroup) !important;
+  }
+
+  & option {
+    outline: 1px solid var(--color-option) !important;
+  }
+
+  & output {
+    outline: 1px solid var(--color-output) !important;
+  }
+
+  & progress {
+    outline: 1px solid var(--color-progress) !important;
+  }
+
+  & select {
+    outline: 1px solid var(--color-select) !important;
+  }
+
+  & textarea {
+    outline: 1px solid var(--color-textarea) !important;
+  }
+
+  & details {
+    outline: 1px solid var(--color-details) !important;
+  }
+
+  & summary {
+    outline: 1px solid var(--color-summary) !important;
+  }
+
+  & command {
+    outline: 1px solid var(--color-command) !important;
+  }
+
+  & menu {
+    outline: 1px solid var(--color-menu) !important;
+  }
+
+  & del {
+    outline: 1px solid var(--color-del) !important;
+  }
+
+  & ins {
+    outline: 1px solid var(--color-ins) !important;
+  }
+
+  & img {
+    outline: 1px solid var(--color-img) !important;
+  }
+
+  & iframe {
+    outline: 1px solid var(--color-iframe) !important;
+  }
+
+  & embed {
+    outline: 1px solid var(--color-embed) !important;
+  }
+
+  & object {
+    outline: 1px solid var(--color-object) !important;
+  }
+
+  & param {
+    outline: 1px solid var(--color-param) !important;
+  }
+
+  & video {
+    outline: 1px solid var(--color-video) !important;
+  }
+
+  & audio {
+    outline: 1px solid var(--color-audio) !important;
+  }
+
+  & source {
+    outline: 1px solid var(--color-source) !important;
+  }
+
+  & canvas {
+    outline: 1px solid var(--color-canvas) !important;
+  }
+
+  & track {
+    outline: 1px solid var(--color-track) !important;
+  }
+
+  & map {
+    outline: 1px solid var(--color-map) !important;
+  }
+
+  & area {
+    outline: 1px solid var(--color-area) !important;
+  }
+
+  & a {
+    outline: 1px solid var(--color-a) !important;
+  }
+
+  & em {
+    outline: 1px solid var(--color-em) !important;
+  }
+
+  & strong {
+    outline: 1px solid var(--color-strong) !important;
+  }
+
+  & i {
+    outline: 1px solid var(--color-i) !important;
+  }
+
+  & b {
+    outline: 1px solid var(--color-b) !important;
+  }
+
+  & u {
+    outline: 1px solid var(--color-u) !important;
+  }
+
+  & s {
+    outline: 1px solid var(--color-s) !important;
+  }
+
+  & small {
+    outline: 1px solid var(--color-small) !important;
+  }
+
+  & strike {
+    outline: 1px solid var(--color-strike) !important;
+  }
+
+  & abbr {
+    outline: 1px solid var(--color-abbr) !important;
+  }
+
+  & q {
+    outline: 1px solid var(--color-q) !important;
+  }
+
+  & cite {
+    outline: 1px solid var(--color-cite) !important;
+  }
+
+  & dfn {
+    outline: 1px solid var(--color-dfn) !important;
+  }
+
+  & sub {
+    outline: 1px solid var(--color-sub) !important;
+  }
+
+  & sup {
+    outline: 1px solid var(--color-sup) !important;
+  }
+
+  & time {
+    outline: 1px solid var(--color-time) !important;
+  }
+
+  & code {
+    outline: 1px solid var(--color-code) !important;
+  }
+
+  & kbd {
+    outline: 1px solid var(--color-kbd) !important;
+  }
+
+  & samp {
+    outline: 1px solid var(--color-samp) !important;
+  }
+
+  & var {
+    outline: 1px solid var(--color-var) !important;
+  }
+
+  & mark {
+    outline: 1px solid var(--color-mark) !important;
+  }
+
+  & bdi {
+    outline: 1px solid var(--color-bdi) !important;
+  }
+
+  & bdo {
+    outline: 1px solid var(--color-bdo) !important;
+  }
+
+  & ruby {
+    outline: 1px solid var(--color-ruby) !important;
+  }
+
+  & rt {
+    outline: 1px solid var(--color-rt) !important;
+  }
+
+  & rp {
+    outline: 1px solid var(--color-rp) !important;
+  }
+
+  & span {
+    outline: 1px solid var(--color-span) !important;
+  }
+
+  & br {
+    outline: 1px solid var(--color-br) !important;
+  }
+
+  & nobr {
+    outline: 1px solid var(--color-nobr) !important;
+  }
+
+  & dialog {
+    outline: 1px solid var(--color-dialog) !important;
+  }
+
+  & template {
+    outline: 1px solid var(--color-template) !important;
+  }
+
+  & slot {
+    outline: 1px solid var(--color-slot) !important;
+  }
+
+  & search {
+    outline: 1px solid var(--color-search) !important;
+  }
+
+  & rb {
+    outline: 1px solid var(--color-rb) !important;
+  }
+
+  & acronym {
+    outline: 1px solid var(--color-acronym) !important;
+  }
+
+  & big {
+    outline: 1px solid var(--color-big) !important;
+  }
+
+  & center {
+    outline: 1px solid var(--color-center) !important;
+  }
+
+  & data {
+    outline: 1px solid var(--color-data) !important;
+  }
+
+  & dir {
+    outline: 1px solid var(--color-dir) !important;
+  }
+
+  & font {
+    outline: 1px solid var(--color-font) !important;
+  }
+}
