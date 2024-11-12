@@ -1,9 +1,12 @@
 {
-  "name": "wxt-react-starter",
-  "description": "manifest.json description",
+  "name": "css-debug-with-pesticide",
+  "description": "A browser extension for debugging CSS by outlining elements.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Rob Lloveras",
+  "license": "MIT",
+  "long_description": "CSS Debug with Pesticide is a browser extension that helps developers debug CSS by outlining each element on the page. It provides a visual representation of the box model, making it easier to identify layout issues and understand the structure of the page.",
   "scripts": {
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
