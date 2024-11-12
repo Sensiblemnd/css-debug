@@ -21,12 +21,12 @@ function App() {
   const onClickActiveHover = async () => {
     await togglePesticideHover();
   };
+
   return (
     <Theme
       appearance="dark"
       style={{ minHeight: "fit-content", backgroundColor: "transparent" }}
     >
-      {" "}
       <Grid gap="4">
         <Box>
           <div>
