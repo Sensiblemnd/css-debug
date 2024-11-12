@@ -11,3 +11,4 @@
 - [ ] Create a user guide for the extension
 - [ ] Implement automated tests for key features
 - [ ] Add a feedback form for users to report issues or suggest features
+- [ ] Add option to allow selection of type of Outline. dashed etc
