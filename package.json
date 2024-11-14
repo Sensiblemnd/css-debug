@@ -2,7 +2,7 @@
   "name": "css-debug-with-pesticide",
   "description": "A browser extension for debugging CSS by outlining elements.",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "author": "Rob Lloveras",
   "license": "MIT",
@@ -15,7 +15,13 @@
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox",
     "compile": "tsc --noEmit",
-    "postinstall": "wxt prepare"
+    "postinstall": "wxt prepare",
+    "wtx-init": "wxt submit init",
+    "wtx-submit": "wxt submit",
+    "chrome-submit-dry-run": "wxt submit --dry-run   --chrome-zip .output/css-debug-with-pesticide-0.0.6-chrome",
+    "firefox-submit-dry-run": "wxt submit --dry-run   --firefox-zip .output/css-debug-with-pesticide-0.0.6-firefox --firefox-sources-zip .output/css-debug-with-pesticide-0.0.6-sources.zip",
+    "firefox-submit": "wxt submit --firefox-zip .output/css-debug-with-pesticide-0.0.6-firefox --firefox-sources-zip .output/css-debug-with-pesticide-0.0.6-sources.zip",
+    "chrome-submit": "wxt submit --chrome-zip .output/css-debug-with-pesticide-0.0.6-chrome"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.1",

@@ -118,12 +118,17 @@
   --color-data: #ff33a1;
   --color-dir: #ff33a1;
   --color-font: #ff33a1;
+  --color-parent: #ff33a1;
+  --color-parent-child-hover: #ff5733;
 }
 
 :has(.pesticide-active-hover) {
-  & *:hover {
-    box-shadow: 2px 0px 2px 1px rgb(7 163 255 / 50%);
-    background-color: rgba(255, 255, 255, 0.108);
+  & :hover {
+    outline: 1px solid var(--color-parent) !important;
+
+    & + * {
+      outline: 1px solid var(--color-parent-child-hover) !important;
+    }
   }
 }
 

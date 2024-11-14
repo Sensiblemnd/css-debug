@@ -27,7 +27,7 @@ function App() {
       appearance="dark"
       style={{ minHeight: "fit-content", backgroundColor: "transparent" }}
     >
-      <Grid gap="4">
+      <Grid gap="4" p={"2"}>
         <Box>
           <div>
             <Grid gap="4">
