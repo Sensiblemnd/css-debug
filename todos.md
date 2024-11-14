@@ -1,5 +1,6 @@
 # TODOs
 
+- [ ] Better UI design
 - [ ] Add Options page to select colors
 - [ ] Add hover color selection on Options page
 - [ ] Add some type of key to toggle hover and outlines
