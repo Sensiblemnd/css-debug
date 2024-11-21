@@ -1,7 +1,7 @@
 import "~/assets/pesticide.css";
 
 export default defineContentScript({
-  matches: ["https://*/*", "http://*/*"],
+  matches: ["<all_urls>"],
   main() {},
   cssInjectionMode: "manifest",
 });

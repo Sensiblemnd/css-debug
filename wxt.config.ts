@@ -5,7 +5,7 @@ export default defineConfig({
   extensionApi: "chrome",
   modules: ["@wxt-dev/module-react"],
   manifest: {
-    host_permissions: ["https://*/*"],
+    name: "CSS Debug with Pesticide",
     permissions: ["activeTab", "scripting"],
   },
 });

@@ -67,6 +67,7 @@ function App() {
           </Grid>
         </Box>
       </Grid>
+      <div onClick={() => browser.runtime.openOptionsPage()}>options</div>
     </Theme>
   );
 }
