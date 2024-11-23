@@ -5,6 +5,7 @@
 */
 .pesticide-active,
 .pesticide-active-hover {
+  --color-html: #071e85;
   --color-body: #ff0000;
   --color-hgroup: #277fb9;
   --color-article: #3498db;
@@ -133,6 +134,10 @@
 }
 
 :has(.pesticide-active) {
+  & html {
+    outline: 1px solid var(--color-html) !important;
+  }
+
   & body {
     outline: 1px solid var(--color-body) !important;
   }
