@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Flex,
   Grid,
   Heading,
   Link,
@@ -13,6 +12,7 @@ import "./App.css";
 
 import { InfoCircledIcon } from "@radix-ui/react-icons";
 import "@radix-ui/themes/styles.css";
+import { addElementListener } from "./helpers copy/add-element-listener";
 import { togglePesticide } from "./helpers copy/toggle-pesticide";
 import { togglePesticideHover } from "./helpers copy/toggle-pesticide-hover";
 function App() {
@@ -22,6 +22,10 @@ function App() {
 
   const onClickActiveHover = async () => {
     await togglePesticideHover();
+  };
+
+  const onClickAddListener = async () => {
+    await addElementListener();
   };
 
   return (
@@ -53,7 +57,7 @@ function App() {
             <Heading size="4" align="center" trim="normal">
               Toggle
             </Heading>
-            <Flex align="center" gap="3" justify="center">
+            <Grid rows={{ initial: "1", md: "2" }} gap="3" align={"center"}>
               <Button style={{ whiteSpace: "nowrap" }} onClick={onClickActive}>
                 Outlines
               </Button>
@@ -63,11 +67,17 @@ function App() {
               >
                 Outline Hover
               </Button>
-            </Flex>
+              <Button
+                style={{ whiteSpace: "nowrap" }}
+                onClick={onClickAddListener}
+              >
+                Click Outlines
+              </Button>
+            </Grid>
           </Grid>
         </Box>
       </Grid>
-      <div onClick={() => browser.runtime.openOptionsPage()}>options</div>
+      {/* <div onClick={() => browser.runtime.openOptionsPage()}>options</div> */}
     </Theme>
   );
 }

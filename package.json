@@ -2,7 +2,7 @@
   "name": "css-debug-with-pesticide",
   "description": "A browser extension for debugging CSS by outlining elements.",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.12",
   "type": "module",
   "author": "Rob Lloveras",
   "license": "MIT",
