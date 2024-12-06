@@ -1,0 +1,26 @@
+{
+  "popupLink": {
+    "message": "GitHub mrmrs/pesticida",
+    "description": "Mensaje emergente."
+  },
+  "toggle": {
+    "message": "Alternar",
+    "description": "Alternar"
+  },
+  "outlines": {
+    "message": "Contornos",
+    "description": "Contornos"
+  },
+  "outlineHover": {
+    "message": "Resaltar contorno",
+    "description": "Resaltar contorno"
+  },
+  "clickOutlines": {
+    "message": "Contornos al hacer clic",
+    "description": "Contornos al hacer clic"
+  },
+  "originalCssFrom": {
+    "message": "css original de",
+    "description": "css original de"
+  }
+}

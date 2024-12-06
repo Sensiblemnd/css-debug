@@ -8,8 +8,8 @@ function App() {
     <Theme
       appearance="dark"
       style={{
-        marginTop: "80px",
         padding: " 10px",
+        height: "fit-content",
         minHeight: "fit-content",
         backgroundColor: "transparent",
       }}
