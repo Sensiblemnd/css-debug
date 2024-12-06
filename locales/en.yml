@@ -1,0 +1,8 @@
+extension:
+  name: CSS Debug with Pesticide
+  description: Toggle outlines on all elements to help debug CSS
+popup:
+  title: Example Popup Title
+  hello: Hello $1!
+messages:
+  description: Learn more about Pesticide on GitHub
