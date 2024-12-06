@@ -1,0 +1,26 @@
+{
+  "popupLink": {
+    "message": "GitHub mrmrs/pesticide",
+    "description": "Popup message."
+  },
+  "toggle": {
+    "message": "Toggle",
+    "description": "Toggle"
+  },
+  "outlines": {
+    "message": "Outlines",
+    "description": "Outlines"
+  },
+  "outlineHover": {
+    "message": "Outline Hover",
+    "description": "Outline Hover"
+  },
+  "clickOutlines": {
+    "message": "Click Outlines",
+    "description": "Click Outlines"
+  },
+  "originalCssFrom": {
+    "message": "original css from",
+    "description": "original css from"
+  }
+}

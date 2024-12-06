@@ -43,9 +43,9 @@ function App() {
         </Popover.Trigger>
         <Popover.Content size="1" maxWidth="300px">
           <Text as="p" trim="both" size="1" style={{ color: "white" }}>
-            original css from{" "}
+            <div> {browser.i18n.getMessage("originalCssFrom")}</div>
             <Link href="https://github.com/mrmrs/pesticide" target="_blank">
-              Learn more about Pesticide on GitHub{" "}
+              {browser.i18n.getMessage("popupLink")}
             </Link>
           </Text>
         </Popover.Content>
@@ -55,23 +55,23 @@ function App() {
         <Box>
           <Grid columns={{ initial: "1", md: "2" }} gap="3" align={"center"}>
             <Heading size="4" align="center" trim="normal">
-              Toggle
+              {browser.i18n.getMessage("toggle")}
             </Heading>
             <Grid rows={{ initial: "1", md: "2" }} gap="3" align={"center"}>
               <Button style={{ whiteSpace: "nowrap" }} onClick={onClickActive}>
-                Outlines
+                {browser.i18n.getMessage("outlines")}
               </Button>
               <Button
                 style={{ whiteSpace: "nowrap" }}
                 onClick={onClickActiveHover}
               >
-                Outline Hover
+                {browser.i18n.getMessage("outlineHover")}
               </Button>
               <Button
                 style={{ whiteSpace: "nowrap" }}
                 onClick={onClickAddListener}
               >
-                Click Outlines
+                {browser.i18n.getMessage("clickOutlines")}
               </Button>
             </Grid>
           </Grid>

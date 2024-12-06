@@ -5,588 +5,677 @@
 */
 .pesticide-active,
 .pesticide-active-hover {
-  --color-html: #071e85;
-  --color-body: #ff0000;
-  --color-hgroup: #277fb9;
-  --color-article: #3498db;
-  --color-nav: #0088c3;
-  --color-aside: #33a0ce;
-  --color-section: #66b8da;
-  --color-header: #99cfe7;
-  --color-footer: #cce7f3;
-  --color-h1: #162544;
-  --color-h2: #314e6e;
-  --color-h3: #3e5e85;
-  --color-h4: #449baf;
-  --color-h5: #c7d1cb;
-  --color-h6: #4371d0;
-  --color-main: #2f4f90;
-  --color-address: #1a2c51;
-  --color-div: #036cdb;
-  --color-p: #ac050b;
-  --color-hr: #ff063f;
-  --color-pre: #850440;
-  --color-blockquote: #f1b8e7;
-  --color-ol: #ff050c;
-  --color-ul: #d90416;
-  --color-li: #d90416;
-  --color-dl: #fd3427;
-  --color-dt: #ff0043;
-  --color-marquee: #ff005b;
-  --color-dd: #e80174;
-  --color-figure: #ff00bb;
-  --color-figcaption: #bf0032;
-  --color-table: #00cc99;
-  --color-caption: #37ffc4;
-  --color-thead: #98daca;
-  --color-tbody: #64a7a0;
-  --color-tfoot: #22746b;
-  --color-tr: #86c0b2;
-  --color-th: #a1e7d6;
-  --color-td: #3f5a54;
-  --color-col: #6c9a8f;
-  --color-colgroup: #6c9a9d;
-  --color-button: #da8301;
-  --color-datalist: #c06000;
-  --color-fieldset: #d95100;
-  --color-form: #d23600;
-  --color-input: #fca600;
-  --color-keygen: #b31e00;
-  --color-label: #ee8900;
-  --color-legend: #de6d00;
-  --color-meter: #e8630c;
-  --color-optgroup: #b33600;
-  --color-option: #ff8a00;
-  --color-output: #ff9619;
-  --color-progress: #e57c00;
-  --color-select: #e26e0f;
-  --color-textarea: #cc5400;
-  --color-details: #33848f;
-  --color-summary: #60a1a6;
-  --color-command: #438da1;
-  --color-menu: #449da6;
-  --color-del: #bf0000;
-  --color-ins: #400000;
-  --color-img: #22746b;
-  --color-iframe: #64a7a0;
-  --color-embed: #98daca;
-  --color-object: #00cc99;
-  --color-param: #37ffc4;
-  --color-video: #6ee866;
-  --color-audio: #027353;
-  --color-source: #012426;
-  --color-canvas: #a2f570;
-  --color-track: #59a600;
-  --color-map: #7be500;
-  --color-area: #305900;
-  --color-a: #ff62ab;
-  --color-em: #800b41;
-  --color-strong: #ff1583;
-  --color-i: #803156;
-  --color-b: #cc1169;
-  --color-u: #ff0430;
-  --color-s: #f805e3;
-  --color-small: #d107b2;
-  --color-strike: #ff00ff;
-  --color-abbr: #4a0263;
-  --color-q: #240018;
-  --color-cite: #64003c;
-  --color-dfn: #b4005a;
-  --color-sub: #dba0c8;
-  --color-sup: #cc0256;
-  --color-time: #d6606d;
-  --color-code: #e04251;
-  --color-kbd: #5e001f;
-  --color-samp: #9c0033;
-  --color-var: #d90047;
-  --color-mark: #ff0053;
-  --color-bdi: #bf3668;
-  --color-bdo: #6f1400;
-  --color-ruby: #ff7b93;
-  --color-rt: #ff2f54;
-  --color-rp: #803e49;
-  --color-span: #cc2643;
-  --color-br: #db687d;
-  --color-nobr: #ff4f6d;
-  --color-dialog: #ff5733;
-  --color-template: #3357ff;
-  --color-slot: #ff33a1;
-  --color-search: #ff33a1;
-  --color-rb: #ff33a1;
-  --color-acronym: #ff33a1;
-  --color-big: #ff33a1;
-  --color-center: #ff33a1;
-  --color-data: #ff33a1;
-  --color-dir: #ff33a1;
-  --color-font: #ff33a1;
-  --color-parent: #ff33a1;
-  --color-parent-child-hover: #ff5733;
+  --outline-pesticide-line-width: 1px;
+  --color-pesticide-html: #071e85;
+  --color-pesticide-body: #ff0000;
+  --color-pesticide-hgroup: #277fb9;
+  --color-pesticide-article: #3498db;
+  --color-pesticide-nav: #0088c3;
+  --color-pesticide-aside: #33a0ce;
+  --color-pesticide-section: #66b8da;
+  --color-pesticide-header: #99cfe7;
+  --color-pesticide-footer: #cce7f3;
+  --color-pesticide-h1: #162544;
+  --color-pesticide-h2: #314e6e;
+  --color-pesticide-h3: #3e5e85;
+  --color-pesticide-h4: #449baf;
+  --color-pesticide-h5: #c7d1cb;
+  --color-pesticide-h6: #4371d0;
+  --color-pesticide-main: #2f4f90;
+  --color-pesticide-address: #1a2c51;
+  --color-pesticide-div: #036cdb;
+  --color-pesticide-p: #ac050b;
+  --color-pesticide-hr: #ff063f;
+  --color-pesticide-pre: #850440;
+  --color-pesticide-blockquote: #f1b8e7;
+  --color-pesticide-ol: #ff050c;
+  --color-pesticide-ul: #d90416;
+  --color-pesticide-li: #d90416;
+  --color-pesticide-dl: #fd3427;
+  --color-pesticide-dt: #ff0043;
+  --color-pesticide-marquee: #ff005b;
+  --color-pesticide-dd: #e80174;
+  --color-pesticide-figure: #ff00bb;
+  --color-pesticide-figcaption: #bf0032;
+  --color-pesticide-table: #00cc99;
+  --color-pesticide-caption: #37ffc4;
+  --color-pesticide-thead: #98daca;
+  --color-pesticide-tbody: #64a7a0;
+  --color-pesticide-tfoot: #22746b;
+  --color-pesticide-tr: #86c0b2;
+  --color-pesticide-th: #a1e7d6;
+  --color-pesticide-td: #3f5a54;
+  --color-pesticide-col: #6c9a8f;
+  --color-pesticide-colgroup: #6c9a9d;
+  --color-pesticide-button: #da8301;
+  --color-pesticide-datalist: #c06000;
+  --color-pesticide-fieldset: #d95100;
+  --color-pesticide-form: #d23600;
+  --color-pesticide-input: #fca600;
+  --color-pesticide-keygen: #b31e00;
+  --color-pesticide-label: #ee8900;
+  --color-pesticide-legend: #de6d00;
+  --color-pesticide-meter: #e8630c;
+  --color-pesticide-optgroup: #b33600;
+  --color-pesticide-option: #ff8a00;
+  --color-pesticide-output: #ff9619;
+  --color-pesticide-progress: #e57c00;
+  --color-pesticide-select: #e26e0f;
+  --color-pesticide-textarea: #cc5400;
+  --color-pesticide-details: #33848f;
+  --color-pesticide-summary: #60a1a6;
+  --color-pesticide-command: #438da1;
+  --color-pesticide-menu: #449da6;
+  --color-pesticide-del: #bf0000;
+  --color-pesticide-ins: #400000;
+  --color-pesticide-img: #22746b;
+  --color-pesticide-iframe: #64a7a0;
+  --color-pesticide-embed: #98daca;
+  --color-pesticide-object: #00cc99;
+  --color-pesticide-param: #37ffc4;
+  --color-pesticide-video: #6ee866;
+  --color-pesticide-audio: #027353;
+  --color-pesticide-source: #012426;
+  --color-pesticide-canvas: #a2f570;
+  --color-pesticide-track: #59a600;
+  --color-pesticide-map: #7be500;
+  --color-pesticide-area: #305900;
+  --color-pesticide-a: #ff62ab;
+  --color-pesticide-em: #800b41;
+  --color-pesticide-strong: #ff1583;
+  --color-pesticide-i: #803156;
+  --color-pesticide-b: #cc1169;
+  --color-pesticide-u: #ff0430;
+  --color-pesticide-s: #f805e3;
+  --color-pesticide-small: #d107b2;
+  --color-pesticide-strike: #ff00ff;
+  --color-pesticide-abbr: #4a0263;
+  --color-pesticide-q: #240018;
+  --color-pesticide-cite: #64003c;
+  --color-pesticide-dfn: #b4005a;
+  --color-pesticide-sub: #dba0c8;
+  --color-pesticide-sup: #cc0256;
+  --color-pesticide-time: #d6606d;
+  --color-pesticide-code: #e04251;
+  --color-pesticide-kbd: #5e001f;
+  --color-pesticide-samp: #9c0033;
+  --color-pesticide-var: #d90047;
+  --color-pesticide-mark: #ff0053;
+  --color-pesticide-bdi: #bf3668;
+  --color-pesticide-bdo: #6f1400;
+  --color-pesticide-ruby: #ff7b93;
+  --color-pesticide-rt: #ff2f54;
+  --color-pesticide-rp: #803e49;
+  --color-pesticide-span: #cc2643;
+  --color-pesticide-br: #db687d;
+  --color-pesticide-nobr: #ff4f6d;
+  --color-pesticide-dialog: #ff5733;
+  --color-pesticide-template: #3357ff;
+  --color-pesticide-slot: #ff33a1;
+  --color-pesticide-search: #ff33a1;
+  --color-pesticide-rb: #ff33a1;
+  --color-pesticide-acronym: #ff33a1;
+  --color-pesticide-big: #ff33a1;
+  --color-pesticide-center: #ff33a1;
+  --color-pesticide-data: #ff33a1;
+  --color-pesticide-dir: #ff33a1;
+  --color-pesticide-font: #ff33a1;
+  --color-pesticide-parent: #ff33a1;
+  --color-pesticide-parent-child-hover: #ff5733;
 }
 
 :has(.pesticide-active-hover) {
   & :hover {
-    outline: 1px solid var(--color-parent) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-parent) !important;
 
     & + * {
-      outline: 1px solid var(--color-parent-child-hover) !important;
+      outline: var(--outline-pesticide-line-width) solid
+        var(--color-pesticide-parent-child-hover) !important;
     }
   }
 }
 
 :has(.pesticide-active) {
   & html {
-    outline: 1px solid var(--color-html) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-html) !important;
   }
 
   & body {
-    outline: 1px solid var(--color-body) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-body) !important;
   }
 
   & hgroup {
-    outline: 1px solid var(--color-hgroup) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-hgroup) !important;
   }
 
   & article {
-    outline: 1px solid var(--color-article) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-article) !important;
   }
 
   & nav {
-    outline: 1px solid var(--color-nav) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-nav) !important;
   }
 
   & aside {
-    outline: 1px solid var(--color-aside) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-aside) !important;
   }
 
   & section {
-    outline: 1px solid var(--color-section) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-section) !important;
   }
 
   & header {
-    outline: 1px solid var(--color-header) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-header) !important;
   }
 
   & footer {
-    outline: 1px solid var(--color-footer) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-footer) !important;
   }
 
   & h1 {
-    outline: 1px solid var(--color-h1) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-h1) !important;
   }
 
   & h2 {
-    outline: 1px solid var(--color-h2) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-h2) !important;
   }
 
   & h3 {
-    outline: 1px solid var(--color-h3) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-h3) !important;
   }
 
   & h4 {
-    outline: 1px solid var(--color-h4) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-h4) !important;
   }
 
   & h5 {
-    outline: 1px solid var(--color-h5) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-h5) !important;
   }
 
   & h6 {
-    outline: 1px solid var(--color-h6) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-h6) !important;
   }
 
   & main {
-    outline: 1px solid var(--color-main) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-main) !important;
   }
 
   & address {
-    outline: 1px solid var(--color-address) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-address) !important;
   }
 
   & div {
-    outline: 1px solid var(--color-div) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-div) !important;
   }
 
   & p {
-    outline: 1px solid var(--color-p) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-p) !important;
   }
 
   & hr {
-    outline: 1px solid var(--color-hr) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-hr) !important;
   }
 
   & pre {
-    outline: 1px solid var(--color-pre) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-pre) !important;
   }
 
   & blockquote {
-    outline: 1px solid var(--color-blockquote) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-blockquote) !important;
   }
 
   & ol {
-    outline: 1px solid var(--color-ol) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-ol) !important;
   }
 
   & ul {
-    outline: 1px solid var(--color-ul) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-ul) !important;
   }
 
   & li {
-    outline: 1px solid var(--color-li) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-li) !important;
   }
 
   & dl {
-    outline: 1px solid var(--color-dl) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-dl) !important;
   }
 
   & dt {
-    outline: 1px solid var(--color-dt) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-dt) !important;
   }
 
   & marquee {
-    outline: 1px solid var(--color-marquee) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-marquee) !important;
   }
 
   & dd {
-    outline: 1px solid var(--color-dd) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-dd) !important;
   }
 
   & figure {
-    outline: 1px solid var(--color-figure) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-figure) !important;
   }
 
   & figcaption {
-    outline: 1px solid var(--color-figcaption) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-figcaption) !important;
   }
 
   & table {
-    outline: 1px solid var(--color-table) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-table) !important;
   }
 
   & caption {
-    outline: 1px solid var(--color-caption) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-caption) !important;
   }
 
   & thead {
-    outline: 1px solid var(--color-thead) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-thead) !important;
   }
 
   & tbody {
-    outline: 1px solid var(--color-tbody) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-tbody) !important;
   }
 
   & tfoot {
-    outline: 1px solid var(--color-tfoot) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-tfoot) !important;
   }
 
   & tr {
-    outline: 1px solid var(--color-tr) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-tr) !important;
   }
 
   & th {
-    outline: 1px solid var(--color-th) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-th) !important;
   }
 
   & td {
-    outline: 1px solid var(--color-td) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-td) !important;
   }
 
   & col {
-    outline: 1px solid var(--color-col) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-col) !important;
   }
 
   & colgroup {
-    outline: 1px solid var(--color-colgroup) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-colgroup) !important;
   }
 
   & button {
-    outline: 1px solid var(--color-button) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-button) !important;
   }
 
   & datalist {
-    outline: 1px solid var(--color-datalist) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-datalist) !important;
   }
 
   & fieldset {
-    outline: 1px solid var(--color-fieldset) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-fieldset) !important;
   }
 
   & form {
-    outline: 1px solid var(--color-form) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-form) !important;
   }
 
   & input {
-    outline: 1px solid var(--color-input) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-input) !important;
   }
 
   & keygen {
-    outline: 1px solid var(--color-keygen) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-keygen) !important;
   }
 
   & label {
-    outline: 1px solid var(--color-label) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-label) !important;
   }
 
   & legend {
-    outline: 1px solid var(--color-legend) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-legend) !important;
   }
 
   & meter {
-    outline: 1px solid var(--color-meter) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-meter) !important;
   }
 
   & optgroup {
-    outline: 1px solid var(--color-optgroup) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-optgroup) !important;
   }
 
   & option {
-    outline: 1px solid var(--color-option) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-option) !important;
   }
 
   & output {
-    outline: 1px solid var(--color-output) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-output) !important;
   }
 
   & progress {
-    outline: 1px solid var(--color-progress) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-progress) !important;
   }
 
   & select {
-    outline: 1px solid var(--color-select) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-select) !important;
   }
 
   & textarea {
-    outline: 1px solid var(--color-textarea) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-textarea) !important;
   }
 
   & details {
-    outline: 1px solid var(--color-details) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-details) !important;
   }
 
   & summary {
-    outline: 1px solid var(--color-summary) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-summary) !important;
   }
 
   & command {
-    outline: 1px solid var(--color-command) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-command) !important;
   }
 
   & menu {
-    outline: 1px solid var(--color-menu) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-menu) !important;
   }
 
   & del {
-    outline: 1px solid var(--color-del) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-del) !important;
   }
 
   & ins {
-    outline: 1px solid var(--color-ins) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-ins) !important;
   }
 
   & img {
-    outline: 1px solid var(--color-img) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-img) !important;
   }
 
   & iframe {
-    outline: 1px solid var(--color-iframe) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-iframe) !important;
   }
 
   & embed {
-    outline: 1px solid var(--color-embed) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-embed) !important;
   }
 
   & object {
-    outline: 1px solid var(--color-object) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-object) !important;
   }
 
   & param {
-    outline: 1px solid var(--color-param) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-param) !important;
   }
 
   & video {
-    outline: 1px solid var(--color-video) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-video) !important;
   }
 
   & audio {
-    outline: 1px solid var(--color-audio) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-audio) !important;
   }
 
   & source {
-    outline: 1px solid var(--color-source) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-source) !important;
   }
 
   & canvas {
-    outline: 1px solid var(--color-canvas) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-canvas) !important;
   }
 
   & track {
-    outline: 1px solid var(--color-track) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-track) !important;
   }
 
   & map {
-    outline: 1px solid var(--color-map) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-map) !important;
   }
 
   & area {
-    outline: 1px solid var(--color-area) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-area) !important;
   }
 
   & a {
-    outline: 1px solid var(--color-a) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-a) !important;
   }
 
   & em {
-    outline: 1px solid var(--color-em) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-em) !important;
   }
 
   & strong {
-    outline: 1px solid var(--color-strong) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-strong) !important;
   }
 
   & i {
-    outline: 1px solid var(--color-i) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-i) !important;
   }
 
   & b {
-    outline: 1px solid var(--color-b) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-b) !important;
   }
 
   & u {
-    outline: 1px solid var(--color-u) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-u) !important;
   }
 
   & s {
-    outline: 1px solid var(--color-s) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-s) !important;
   }
 
   & small {
-    outline: 1px solid var(--color-small) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-small) !important;
   }
 
   & strike {
-    outline: 1px solid var(--color-strike) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-strike) !important;
   }
 
   & abbr {
-    outline: 1px solid var(--color-abbr) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-abbr) !important;
   }
 
   & q {
-    outline: 1px solid var(--color-q) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-q) !important;
   }
 
   & cite {
-    outline: 1px solid var(--color-cite) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-cite) !important;
   }
 
   & dfn {
-    outline: 1px solid var(--color-dfn) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-dfn) !important;
   }
 
   & sub {
-    outline: 1px solid var(--color-sub) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-sub) !important;
   }
 
   & sup {
-    outline: 1px solid var(--color-sup) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-sup) !important;
   }
 
   & time {
-    outline: 1px solid var(--color-time) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-time) !important;
   }
 
   & code {
-    outline: 1px solid var(--color-code) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-code) !important;
   }
 
   & kbd {
-    outline: 1px solid var(--color-kbd) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-kbd) !important;
   }
 
   & samp {
-    outline: 1px solid var(--color-samp) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-samp) !important;
   }
 
   & var {
-    outline: 1px solid var(--color-var) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-var) !important;
   }
 
   & mark {
-    outline: 1px solid var(--color-mark) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-mark) !important;
   }
 
   & bdi {
-    outline: 1px solid var(--color-bdi) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-bdi) !important;
   }
 
   & bdo {
-    outline: 1px solid var(--color-bdo) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-bdo) !important;
   }
 
   & ruby {
-    outline: 1px solid var(--color-ruby) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-ruby) !important;
   }
 
   & rt {
-    outline: 1px solid var(--color-rt) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-rt) !important;
   }
 
   & rp {
-    outline: 1px solid var(--color-rp) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-rp) !important;
   }
 
   & span {
-    outline: 1px solid var(--color-span) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-span) !important;
   }
 
   & br {
-    outline: 1px solid var(--color-br) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-br) !important;
   }
 
   & nobr {
-    outline: 1px solid var(--color-nobr) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-nobr) !important;
   }
 
   & dialog {
-    outline: 1px solid var(--color-dialog) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-dialog) !important;
   }
 
   & template {
-    outline: 1px solid var(--color-template) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-template) !important;
   }
 
   & slot {
-    outline: 1px solid var(--color-slot) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-slot) !important;
   }
 
   & search {
-    outline: 1px solid var(--color-search) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-search) !important;
   }
 
   & rb {
-    outline: 1px solid var(--color-rb) !important;
+    outline: var(--outline-pesticide-line-width) solid var(--color-pesticide-rb) !important;
   }
 
   & acronym {
-    outline: 1px solid var(--color-acronym) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-acronym) !important;
   }
 
   & big {
-    outline: 1px solid var(--color-big) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-big) !important;
   }
 
   & center {
-    outline: 1px solid var(--color-center) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-center) !important;
   }
 
   & data {
-    outline: 1px solid var(--color-data) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-data) !important;
   }
 
   & dir {
-    outline: 1px solid var(--color-dir) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-dir) !important;
   }
 
   & font {
-    outline: 1px solid var(--color-font) !important;
+    outline: var(--outline-pesticide-line-width) solid
+      var(--color-pesticide-font) !important;
   }
 }
