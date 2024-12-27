@@ -1,5 +1,9 @@
 # CSS Debug with Pesticide
 
+[Chrome Ext](https://chromewebstore.google.com/detail/css-debug-with-pesticide/ppdnjdkjbgdhebchidboilipfloghadj)
+
+[Firefox ext](https://addons.mozilla.org/en-US/firefox/addon/css-debug-with-pesticide/)
+
 CSS Debug with Pesticide is a browser extension that helps developers debug CSS by outlining each element on the page. It provides a visual representation of the box model, making it easier to identify layout issues and understand the structure of the page.
 
 ## Commands to Run the App
