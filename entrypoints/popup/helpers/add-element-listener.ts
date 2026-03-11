@@ -1,24 +1,23 @@
-import { PESTICIDE_ACTIVE, PESTICIDE_CLICK_MODE } from "../../../helpers/constants";
+import { PESTICIDE_ACTIVE, PESTICIDE_CLICK_FLAG, PESTICIDE_CLICK_MODE } from "../../../helpers/constants";
 import { isStorableOrigin, setSiteState } from "../../../helpers/storage";
+import { getActiveTab } from "./get-active-tab";
 
 // Toggles per-element click-to-outline mode on the active tab.
 // First call activates: hovering shows a preview highlight; each click toggles the outline.
 // Calling again deactivates by removing the listener and hover highlight.
 export const addElementListener = async (): Promise<boolean | null> => {
   try {
-    const tabs = await browser.tabs.query({ active: true, currentWindow: true });
-    const tab = tabs[0];
+    const tab = await getActiveTab();
     if (!tab?.id) return null;
 
     const results = await browser.scripting.executeScript({
       target: { tabId: tab.id },
-      func: (clickClass: string, modeClass: string) => {
-        const FLAG = "__pesticideClickActive";
+      func: (clickClass: string, modeClass: string, flagKey: string) => {
         const doc = document as Document & { [key: string]: unknown };
 
-        if (doc[FLAG]) {
-          document.removeEventListener("click", doc[FLAG] as EventListener);
-          delete doc[FLAG];
+        if (doc[flagKey]) {
+          document.removeEventListener("click", doc[flagKey] as EventListener);
+          delete doc[flagKey];
           document.body.classList.remove(modeClass);
           return false;
         }
@@ -27,11 +26,11 @@ export const addElementListener = async (): Promise<boolean | null> => {
           (e.target as Element)?.classList?.toggle(clickClass);
         };
         document.addEventListener("click", handler);
-        doc[FLAG] = handler;
+        doc[flagKey] = handler;
         document.body.classList.add(modeClass);
         return true;
       },
-      args: [PESTICIDE_ACTIVE, PESTICIDE_CLICK_MODE],
+      args: [PESTICIDE_ACTIVE, PESTICIDE_CLICK_MODE, PESTICIDE_CLICK_FLAG],
     });
 
     const isActive = (results[0]?.result as boolean) ?? false;

@@ -40,20 +40,17 @@ function App() {
     })();
   }, []);
 
-  const onClickActive = async () => {
-    const next = await togglePesticide();
-    if (next !== null) setActive((s) => ({ ...s, outlines: next }));
+  const makeHandler = (
+    fn: () => Promise<boolean | null>,
+    key: keyof SiteState
+  ) => async () => {
+    const next = await fn();
+    if (next !== null) setActive((s) => ({ ...s, [key]: next }));
   };
 
-  const onClickActiveHover = async () => {
-    const next = await togglePesticideHover();
-    if (next !== null) setActive((s) => ({ ...s, hover: next }));
-  };
-
-  const onClickAddListener = async () => {
-    const next = await addElementListener();
-    if (next !== null) setActive((s) => ({ ...s, clickOutlines: next }));
-  };
+  const onClickActive = makeHandler(togglePesticide, "outlines");
+  const onClickActiveHover = makeHandler(togglePesticideHover, "hover");
+  const onClickAddListener = makeHandler(addElementListener, "clickOutlines");
 
   const onClickReset = async () => {
     await resetSite();

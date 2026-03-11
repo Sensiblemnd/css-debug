@@ -7,3 +7,6 @@ export const PESTICIDE_HOVER = "pesticide-active-hover";
 // Applied to body while click-to-outline mode is active;
 // enables the pre-click hover highlight via CSS.
 export const PESTICIDE_CLICK_MODE = "pesticide-click-mode";
+// Property key stored on `document` to track the active click listener.
+// Passed via `args` into executeScript so the value is always in sync.
+export const PESTICIDE_CLICK_FLAG = "__pesticideClickActive";
