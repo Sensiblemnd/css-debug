@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -12,20 +13,51 @@ import "./App.css";
 
 import { InfoCircledIcon } from "@radix-ui/react-icons";
 import "@radix-ui/themes/styles.css";
-import { addElementListener } from "./helpers copy/add-element-listener";
-import { togglePesticide } from "./helpers copy/toggle-pesticide";
-import { togglePesticideHover } from "./helpers copy/toggle-pesticide-hover";
+import { addElementListener } from "./helpers/add-element-listener";
+import { resetSite } from "./helpers/reset-site";
+import { togglePesticide } from "./helpers/toggle-pesticide";
+import { togglePesticideHover } from "./helpers/toggle-pesticide-hover";
+import { getSiteState, type SiteState } from "../../helpers/storage";
 function App() {
+  const [active, setActive] = useState<SiteState>({
+    outlines: false,
+    hover: false,
+    clickOutlines: false,
+  });
+
+  // On popup open, read persisted state for the current tab's origin
+  useEffect(() => {
+    (async () => {
+      try {
+        const tabs = await browser.tabs.query({ active: true, currentWindow: true });
+        const url = tabs[0]?.url;
+        if (!url) return;
+        const state = await getSiteState(new URL(url).origin);
+        setActive(state);
+      } catch {
+        // Cannot read state — leave defaults (all off)
+      }
+    })();
+  }, []);
+
   const onClickActive = async () => {
-    await togglePesticide();
+    const next = await togglePesticide();
+    if (next !== null) setActive((s) => ({ ...s, outlines: next }));
   };
 
   const onClickActiveHover = async () => {
-    await togglePesticideHover();
+    const next = await togglePesticideHover();
+    if (next !== null) setActive((s) => ({ ...s, hover: next }));
   };
 
   const onClickAddListener = async () => {
-    await addElementListener();
+    const next = await addElementListener();
+    if (next !== null) setActive((s) => ({ ...s, clickOutlines: next }));
+  };
+
+  const onClickReset = async () => {
+    await resetSite();
+    setActive({ outlines: false, hover: false, clickOutlines: false });
   };
 
   return (
@@ -58,20 +90,34 @@ function App() {
               {browser.i18n.getMessage("toggle")}
             </Heading>
             <Grid rows={{ initial: "1", md: "2" }} gap="3" align={"center"}>
-              <Button style={{ whiteSpace: "nowrap" }} onClick={onClickActive}>
+              <Button
+                style={{ whiteSpace: "nowrap" }}
+                variant={active.outlines ? "solid" : "outline"}
+                onClick={onClickActive}
+              >
                 {browser.i18n.getMessage("outlines")}
               </Button>
               <Button
                 style={{ whiteSpace: "nowrap" }}
+                variant={active.hover ? "solid" : "outline"}
                 onClick={onClickActiveHover}
               >
                 {browser.i18n.getMessage("outlineHover")}
               </Button>
               <Button
                 style={{ whiteSpace: "nowrap" }}
+                variant={active.clickOutlines ? "solid" : "outline"}
                 onClick={onClickAddListener}
               >
                 {browser.i18n.getMessage("clickOutlines")}
+              </Button>
+              <Button
+                style={{ whiteSpace: "nowrap" }}
+                variant="ghost"
+                color="red"
+                onClick={onClickReset}
+              >
+                {browser.i18n.getMessage("reset")}
               </Button>
             </Grid>
           </Grid>

@@ -19,6 +19,10 @@
     "message": "Click Outlines",
     "description": "Click Outlines"
   },
+  "reset": {
+    "message": "Reset",
+    "description": "Reset all outlines for this site"
+  },
   "originalCssFrom": {
     "message": "original css from",
     "description": "original css from"

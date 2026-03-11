@@ -12,6 +12,6 @@ export default defineConfig({
     description: "Toggle outlines on all elements to help debug CSS",
 
     homepage_url: "https://github.com/Sensiblemnd/css-debug",
-    permissions: ["activeTab", "scripting"],
+    permissions: ["activeTab", "scripting", "storage"],
   },
 });

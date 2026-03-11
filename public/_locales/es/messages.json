@@ -19,6 +19,10 @@
     "message": "Contornos al hacer clic",
     "description": "Contornos al hacer clic"
   },
+  "reset": {
+    "message": "Restablecer",
+    "description": "Restablecer todos los contornos de este sitio"
+  },
   "originalCssFrom": {
     "message": "css original de",
     "description": "css original de"

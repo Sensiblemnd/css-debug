@@ -6,3 +6,4 @@ popup:
   hello: Hello $1!
 messages:
   description: Learn more about Pesticide on GitHub
+  reset: Reset

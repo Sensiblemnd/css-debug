@@ -136,6 +136,15 @@
   }
 }
 
+/* Click-to-outline mode: show a dashed amber highlight on hover so
+   the user knows which element they are about to click. */
+:has(.pesticide-click-mode) {
+  & *:hover {
+    outline: 2px dashed rgba(255, 200, 0, 0.9) !important;
+    cursor: crosshair !important;
+  }
+}
+
 :has(.pesticide-active) {
   & html {
     outline: var(--outline-pesticide-line-width) solid
