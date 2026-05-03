@@ -17,6 +17,8 @@
     "postinstall": "wxt prepare",
     "wtx-init": "wxt submit init",
     "wtx-submit": "wxt submit",
+    "chrome-submit-dry-run": "wxt submit --dry-run --chrome-zip .output/tab-group-backup-1.0.0-chrome.zip",
+    "chrome-sub mit": "wxt submit --chrome-zip .output/tab-group-backup-1.0.0-chrome.zip",
     "firefox-submit-dry-run": "wxt submit --dry-run --firefox-zip .output/css-debug-with-pesticide-0.0.13-firefox.zip --firefox-sources-zip .output/css-debug-with-pesticide-0.0.13-sources.zip",
     "firefox-submit": "wxt submit --firefox-zip .output/css-debug-with-pesticide-0.0.13-firefox.zip --firefox-sources-zip .output/css-debug-with-pesticide-0.0.13-sources.zip"
   },

@@ -103,14 +103,20 @@
 | File | Relevance |
 |------|-----------|
 | `entrypoints/popup/App.tsx` | Main popup UI; buttons, state indicators |
-| `entrypoints/content.ts` | Will become full state-aware content script (Phase 1) |
+| `entrypoints/content.ts` | State-aware content script; restores toggle state on page load |
 | `entrypoints/options/App.tsx` | Options page; will get settings UI (Phase 2) |
-| `entrypoints/popup/helpers copy/*.ts` | All 3 toggle helpers — rename, fix, harden |
-| `entrypoints/popup/helpers copy/on-refresh.ts` | **DELETE** — dead code |
-| `entrypoints/popup/style.css` & `entrypoints/options/style.css` | Merge into shared (Phase 0) |
-| `wxt.config.ts` | Add keyboard commands (Phase 3) |
-| `package.json` | Remove unused dep (Phase 0) |
+| `entrypoints/popup/helpers/toggle-pesticide.ts` | Thin wrapper → `toggleBodyClass` |
+| `entrypoints/popup/helpers/toggle-pesticide-hover.ts` | Thin wrapper → `toggleBodyClass` |
+| `entrypoints/popup/helpers/toggle-body-class.ts` | Generic body-class toggle + storage write |
+| `entrypoints/popup/helpers/add-element-listener.ts` | Click-to-outline mode toggle |
+| `entrypoints/popup/helpers/reset-site.ts` | Clears all modes + persisted state |
+| `entrypoints/popup/helpers/get-active-tab.ts` | Shared tab query helper |
+| `entrypoints/shared/style.css` | Shared dark theme CSS for popup + options |
+| `helpers/constants.ts` | CSS class names + click flag key |
+| `helpers/storage.ts` | `getSiteState` / `setSiteState` / `clearSiteState` |
 | `helpers/colors.ts` | 115-element colour map; referenced by options page |
+| `wxt.config.ts` | Extension config; add keyboard commands (Phase 3) |
+| `package.json` | Dependencies |
 | `locales/en.yml` | Source of truth for i18n keys |
 | `public/_locales/*/messages.json` | Compiled translation files |
 
@@ -134,6 +140,8 @@
 | 2026-03-10 | — | Roadmap created; codebase reviewed; plan agreed |
 | 2026-03-10 | — | Phase 0 complete: folder rename, constants, bug fixes, dead code removed, shared CSS, dep cleanup, HTML titles |
 | 2026-03-10 | — | Phase 1 complete: state persistence via storage.ts; content script restores state on load; popup shows active/inactive button state |
+| 2026-03-10 | — | Add-ons: reset button; click-mode hover preview (dashed amber highlight + crosshair cursor); fix reset not clearing per-element outlines |
+| 2026-03-10 | — | Refactor: `get-active-tab.ts` + `toggle-body-class.ts` shared helpers; `PESTICIDE_CLICK_FLAG` constant; two toggle helpers slimmed to wrappers; `makeHandler` factory in App.tsx; content.ts uses `getSiteState` |
 | — | 0.0.13 | Current published version |
 | — | 0.0.12 | Added click-to-outline feature |
 | — | 0.0.10 | New extension icons |
